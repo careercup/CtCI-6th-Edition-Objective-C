@@ -16,7 +16,9 @@
 // Output: True (permutations: "taco cat", "atco eta", etc.)
 // pg 91
 
+
 #import <Foundation/Foundation.h>
+
 
 #pragma mark - Solution #1
 
@@ -129,6 +131,7 @@ int createBitVector(NSString *string) {
     return result;
 }
 
+
 BOOL checkExactlyOneBitSet(int bitVector) {
     return (bitVector & (bitVector - 1)) == 0;
 }
@@ -139,6 +142,7 @@ BOOL isPermutationOfPalindrome3(NSString *string) {
 
     return bitVector == 0 || checkExactlyOneBitSet(bitVector);
 }
+
 
 #pragma mark -
 
@@ -158,7 +162,7 @@ int main(int argc, const char * argv[]) {
         BOOL result3 = isPermutationOfPalindrome3([inputString lowercaseString]);
 
         NSLog(@"Solution 3:\nInput: %@\nOutput: %@", inputString, result3 ? @"True" : @"False");
-}
-
+    }
+    
     return 0;
 }
