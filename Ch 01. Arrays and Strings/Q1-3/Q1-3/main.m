@@ -17,6 +17,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import "URLify.h"
 
 
 NSString *replaceSpaces(NSString *string, int trueLength) {
@@ -65,6 +66,15 @@ int main(int argc, const char * argv[]) {
         NSString *outputString = replaceSpaces(inputString, trueLength);
 
         NSLog(@"Input: %@\nOutput: %@", inputString, outputString);
+        
+        /*
+        ** Chapter 1
+        **/
+        
+        // Exercise 1.3
+        URLify *urlifyObject = [[URLify alloc] init];
+        NSString *urlifyTestString = @"Mr John Smith";
+        NSLog(@"Result of Exercise 1.3: %@", [urlifyObject replaceSpaces:urlifyTestString]);
     }
 
     return 0;

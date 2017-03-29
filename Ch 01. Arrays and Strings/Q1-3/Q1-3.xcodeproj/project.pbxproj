@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6701C5161E8B496E0007AFF5 /* URLify.m in Sources */ = {isa = PBXBuildFile; fileRef = 6701C5151E8B496E0007AFF5 /* URLify.m */; };
 		8452D5D41D809DC1006AF914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452D5D31D809DC1006AF914 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6701C5141E8B49530007AFF5 /* URLify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLify.h; sourceTree = "<group>"; };
+		6701C5151E8B496E0007AFF5 /* URLify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLify.m; sourceTree = "<group>"; };
 		8452D5D01D809DC1006AF914 /* Q1-3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Q1-3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8452D5D31D809DC1006AF914 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				8452D5D31D809DC1006AF914 /* main.m */,
+				6701C5141E8B49530007AFF5 /* URLify.h */,
+				6701C5151E8B496E0007AFF5 /* URLify.m */,
 			);
 			path = "Q1-3";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6701C5161E8B496E0007AFF5 /* URLify.m in Sources */,
 				8452D5D41D809DC1006AF914 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 				8452D5D91D809DC1006AF914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
