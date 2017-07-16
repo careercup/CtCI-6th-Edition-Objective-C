@@ -17,8 +17,8 @@
 #import "AssortedMethods.h"
 
 
-static const int matrixNumberOfRows = 5;
-static const int matrixNumberOfColumns = 5;
+static const int kMatrixNumberOfRows = 5;
+static const int kMatrixNumberOfColumns = 5;
 
 BOOL rotateMatrix(int **matrix, int numberOfRows, int numberOfColumns) {
     if (numberOfRows == 0 ||
@@ -56,23 +56,23 @@ BOOL rotateMatrix(int **matrix, int numberOfRows, int numberOfColumns) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int **matrix = MakeIntMatrix(matrixNumberOfRows, matrixNumberOfColumns);
+        int **matrix = MakeIntMatrix(kMatrixNumberOfRows, kMatrixNumberOfColumns);
         [AssortedMethods randomMatrix:matrix
-                         numberOfRows:matrixNumberOfRows
-                      numberOfColumns:matrixNumberOfColumns
+                         numberOfRows:kMatrixNumberOfRows
+                      numberOfColumns:kMatrixNumberOfColumns
                                   min:1
                                   max:9];
         [AssortedMethods printMatrix:matrix
-                        numberOfRows:matrixNumberOfRows
-                     numberOfColumns:matrixNumberOfColumns];
+                        numberOfRows:kMatrixNumberOfRows
+                     numberOfColumns:kMatrixNumberOfColumns];
         
-        rotateMatrix(matrix, matrixNumberOfRows, matrixNumberOfColumns);
+        rotateMatrix(matrix, kMatrixNumberOfRows, kMatrixNumberOfColumns);
         
         [AssortedMethods printMatrix:matrix
-                        numberOfRows:matrixNumberOfRows
-                     numberOfColumns:matrixNumberOfColumns];
+                        numberOfRows:kMatrixNumberOfRows
+                     numberOfColumns:kMatrixNumberOfColumns];
         
-        FreeIntMatrix(matrix, matrixNumberOfRows);
+        FreeIntMatrix(matrix, kMatrixNumberOfRows);
     }
     return 0;
 }
